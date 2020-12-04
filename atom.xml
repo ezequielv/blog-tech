@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>ezequielv's blog</title>
- <link href="https://ezequielv.github.io/blog-tech/atom.xml" rel="self"/>
- <link href="https://ezequielv.github.io/blog-tech"/>
- <updated>2020-12-04T13:18:23+00:00</updated>
- <id>https://ezequielv.github.io/blog-tech</id>
+ <link href="https://blog-b1.jev.me.uk/atom.xml" rel="self"/>
+ <link href="https://blog-b1.jev.me.uk"/>
+ <updated>2020-12-04T14:33:39+00:00</updated>
+ <id>https://blog-b1.jev.me.uk</id>
  <author>
    <name>Ezequiel Valenzuela</name>
    <email>evp.dev.ezequiel.p.01@jev.me.uk</email>

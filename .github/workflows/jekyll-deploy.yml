@@ -1,0 +1,35 @@
+name: Jekyll Deploy
+
+on:
+  push:
+    branches:
+      - master
+  #schedule:
+  #  # redeploy every morning to update unpublished pages
+  #  - cron: "0 2 * * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache gems
+        uses: actions/cache@v1
+        with:
+          path: vendor/gems
+          key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Build & Deploy to GitHub Pages
+        # orig: uses: DavidS/jekyll-deploy@main
+        uses: DavidS/jekyll-deploy@1.1.1
+        env:
+          JEKYLL_ENV: production
+          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+        #with:
+        #  # Set to "true" to only build, but not deploy. This is useful for PR testing
+        #  #build-only: # optional, default is false

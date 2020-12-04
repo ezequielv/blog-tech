@@ -1,1 +1,0 @@
-../common/root/_drafts/jekyll-introduction-draft.md

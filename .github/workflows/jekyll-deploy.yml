@@ -6,6 +6,7 @@ on:
       - master
       # note: (vim) updated with
       #  :execute 'r!cd ' . expand('%:h') . ' && git cb || echo "error: $?" 1>&2'
+      - dev_ezequielv-feat-github_workflow_jekylldeploy_submodules_pub_only-01-01_01
   #schedule:
   #  # redeploy every morning to update unpublished pages
   #  - cron: "0 2 * * *"

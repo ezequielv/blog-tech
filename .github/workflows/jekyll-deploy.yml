@@ -24,12 +24,8 @@ jobs:
       - name: Checkout public modules
         run: git submodule update --init --depth 1 --recursive modules/pub/
 
-      # TODO: make 'local/bin/reposetup' a symlink to a file in a public module (should I put this in the "blog common" one for now?)
-      # TODO: other values:
-      #   --mode={ prod | dev (default) }
-      #   --site={ github | (anything else) }
-      # LATER: - name: Post-checkout setup
-      # LATER:   run: local/bin/reposetup --mode=prod --site=github post-checkout
+      - name: Post-checkout setup
+        run: local/bin/reposetup --mode=prod --site=github post-checkout
 
       #- name: Cache gems
       #  uses: actions/cache@v1

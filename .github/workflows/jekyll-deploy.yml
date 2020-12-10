@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+      # note: (vim) updated with
+      #  :execute 'r!cd ' . expand('%:h') . ' && git cb || echo "error: $?" 1>&2'
   #schedule:
   #  # redeploy every morning to update unpublished pages
   #  - cron: "0 2 * * *"

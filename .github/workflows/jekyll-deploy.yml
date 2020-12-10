@@ -15,9 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout main repository (no submodules)
+        uses: actions/checkout@v2
         with:
-          submodules: true
+          submodules: false
 
       #- name: Cache gems
       #  uses: actions/cache@v1

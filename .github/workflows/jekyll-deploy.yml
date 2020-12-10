@@ -20,6 +20,9 @@ jobs:
         with:
           submodules: false
 
+      - name: Checkout public modules
+        run: git submodule update --init --depth 1 --recursive modules/pub/
+
       #- name: Cache gems
       #  uses: actions/cache@v1
       #  with:

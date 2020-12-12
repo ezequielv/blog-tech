@@ -1,3 +1,6 @@
 [submodule "pub/ev-site-jb-common-01"]
 	path = modules/pub/ev-site-jb-common-01
 	url = https://github.com/ezequielv/ev-site-jb-common-01.git
+[submodule "pvt/ev-site-blogtech-pvt-01"]
+	path = modules/pvt/ev-site-blogtech-pvt-01
+	url = https://bitbucket.org/ezequielv/ev-site-blogtech-pvt-01.git

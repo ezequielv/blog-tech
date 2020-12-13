@@ -48,9 +48,7 @@ jobs:
 
       - name: Build & Deploy to GitHub Pages
         # orig: uses: DavidS/jekyll-deploy@main
-        # 2020.12.04: disabled (choked on non-existing 'gh-pages' branch):
-        #- uses: DavidS/jekyll-deploy@1.1.1
-        uses: DavidS/jekyll-deploy@main
+        uses: ezequielv/jekyll-deploy@dev_ezequielv-feat-hooks_support-01-01_01
         env:
           JEKYLL_ENV: production
           GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}

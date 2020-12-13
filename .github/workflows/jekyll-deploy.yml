@@ -52,6 +52,6 @@ jobs:
         env:
           JEKYLL_ENV: production
           GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
-        #with:
-        #  # Set to "true" to only build, but not deploy. This is useful for PR testing
-        #  #build-only: # optional, default is false
+        with:
+          # Set to "true" to only build, but not deploy. This is useful for PR testing
+          build-only: true # optional, default is false

@@ -7,7 +7,8 @@ on:
       # note: (vim) updated with
       #  :execute 'r!cd ' . expand('%:h') . ' && git cb || echo "error: $?" 1>&2'
       - dev_ezequielv-struct-submodules_pub_and_pvt-01-01_01
-      - dev_ezequielv-feat-hooks_support-01-01_01
+      # TODO: re-enable for testing once hook is updated:
+      # - dev_ezequielv-feat-hooks_support-01-01_01
   #schedule:
   #  # redeploy every morning to update unpublished pages
   #  - cron: "0 2 * * *"
